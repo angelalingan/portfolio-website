@@ -1,0 +1,469 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+/*
+colors used
+
+text color (black):#000000;
+background color (seashell): #f8ece8;
+primary color (candy pink): #e77082;
+secondary color (misty rose): #ead3cd;
+tertiary-color (paradise pink): #e15166;
+quarternary-color (paolo veronese green): #489c79;
+*/
+
+:root { /*white*/ /*black*/
+}
+
+* { /*apply the styling to all HTML elements within the CSS file*/
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box; /*sets the default width of an element to include the padding and the border, ensure the width value for every element doesn’t collapse with their padding and border values*/
+}
+
+body {
+  background-color: #f8ece8;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 200;
+  font-size:  16px;
+  line-height: 1.6;
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: 700;
+  color: #000;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #000;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color:#000;
+}
+
+span {
+  color: #e77082;
+}
+
+.header1 {
+  text-align: center;
+}
+
+/*-----Link Stylings-----*/
+a {
+  color: #e77082;
+}
+
+a:visited { /* visited link */
+    color: #e15166;
+}
+
+a:hover, a:focus { /* No underlining when hovering over a link */
+    text-decoration: none;
+}
+
+a:active { /* selected link */
+    color: #489c79;
+}
+
+/*-----End of Link Stylings-----*/
+
+/*-----Button Stylings-----*/
+
+.button {
+    /* overwrites browser defaults and resets the border */
+  border: none;
+  /* takes the font from the outer container */
+  display: inline-block;
+    font-family: inherit;
+    background-color: #e77082; /* styles the background color*/
+    color: #fff; /*styles the font color*/
+    text-decoration: none; /*styles the text decoration (underline, etc.) of the button */
+    padding: 10px;  /*adds spacing to the button */
+    border-radius: 3px; /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
+    border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+    -webkit-transition: 0.2s opacity;
+    -o-transition: 0.2s opacity;
+    transition: 0.2s opacity;
+}
+
+button {
+    /* overwrites browser defaults and resets the border */
+  border: none;
+  /* takes the font from the outer container */
+  display: inline-block;
+    font-family: inherit;
+    background-color: #e77082; /* styles the background color*/
+    color: #fff; /*styles the font color*/
+    text-decoration: none; /*styles the text decoration (underline, etc.) of the button */
+    padding: 10px;  /*adds spacing to the button */
+    border-radius: 3px; /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
+    border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+    -webkit-transition: 0.2s opacity;
+    -o-transition: 0.2s opacity;
+    transition: 0.2s opacity;
+}
+
+button:hover, button:focus, .button:hover, .button:focus  {
+    cursor: pointer; /* lets the mouse appear as a hand when hovering over the button */
+    opacity: 0.8; /* reduces the opacity of the button to 80% */
+    -webkit-transition: 0.2s opacity;
+    -o-transition: 0.2s opacity;
+    transition: 0.2s opacity;
+}
+
+.button__secondary {
+    background-color: #ead3cd;
+    color: #2b2b2b;
+}
+
+/*-----End of Button Stylings-----*/
+
+/*-----Navigation Items Stylings-----*/
+
+.navigation-list {
+  list-style-type: none; /*erases the dots from the unordered list and reformat it in horizontal format*/
+}
+
+.navigation-list li {
+  display: inline-block; /*aligns the navigation bar in a row*/
+  margin-left: 15px; /*give them some space in-between the navigations*/
+}
+
+.navigation-list__item--active {
+    text-decoration: none;
+}
+
+/*-----End of Navigation Items Stylings-----*/
+
+/*-----Profile Items-----*/
+
+.profile_portrait {
+  float: left; /*used to control the flow of elements, all other content will flow around that element*/
+  width: 250px;
+  height: auto; /*height is automatically set to a value that matches the correct ratio*/
+    margin-right: 40px;
+    border-radius: 50%; /*rounds each edge to 50% of the element’s original width or height*/
+}
+
+.profile {
+  max-width:700px; /*will keep this “box” from exceeding 700px*/
+  margin: 0 auto; /*profile “box” is now centered on the page*/
+}
+
+/*-----End of Profile Items-----*/
+
+/*-----Header Items-----*/
+
+.page-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+    width: 100%;
+    padding: 20px;
+
+}
+.page-header .page-header__item:last-child {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    text-align: right; /*right aligns the navigation*/
+}
+
+/*-----End of Header Items-----*/
+
+/*-----Footer Items-----*/
+
+.page_footer {
+  clear: both;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; /*puts  the group of icons below the text*/
+  text-align: center; /*centers the content inside the footer*/
+}
+
+/*-----End of Footer Items-----*/
+
+/*-----Grid Items-----*/
+
+@supports (display: grid) {
+  .grid {
+      display: -ms-grid;
+      display: grid; /*creates a grid container*/
+    -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
+    grid-template-columns: 1fr 1fr 1fr; /*created three columns with each item the same size*/
+    -ms-grid-rows: 1fr 20px 1fr;
+    grid-template-rows: 1fr 1fr; /* created two rows*/
+    grid-gap: 20px; /* adds some spacing between the grid items*/
+    margin: 20px;
+  }
+  .grid > *:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  }
+  .grid > *:nth-child(2) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  }
+  .grid > *:nth-child(3) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 5;
+  }
+  .grid > *:nth-child(4) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  }
+  .grid > *:nth-child(5) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  }
+  .grid > *:nth-child(6) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 5;
+  }
+}
+
+.grid__item {
+  display: inline-block;
+  width: 33%; /*grid items to take up about one-third of the width of the page*/
+}
+
+
+.grid__item {
+  background-color: #e6e6e6; /*gives the grid items a background color*/
+  width: auto; /* to ensure that the power of the new layout grid can still be used in modern browsers, automatically takes the width from the defined grid container*/
+  min-height: auto;
+  margin: 0;
+}
+
+.grid__item: last-child { /*targets the last grid__item with the pseudo-selector last-child*/
+  -ms-grid-column: 3;
+      grid-column-start: 3; /*tells the last child item that it should be in the third column*/
+  -ms-grid-column-span: 0;
+  grid-column-end: 3; /*tells the last child item that it should end in the third column*/
+  -ms-grid-row: 1;
+      grid-row-start: 1; /*tells the last child item that it should start in the first row*/
+  -ms-grid-row-span: 2;
+  grid-row-end: 3; /*tells the last child item that it should end at the beginning of the third row*/
+}
+
+/*-----End of Grid Items-----*/
+
+/*-----Media Queries-----*/
+
+@media all and (max-width: 500px) {
+  .grid {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;  /*changes layout from a 3-column grid to a 1-column grid by simply passing 1fr to the grid-template-columns property*/
+  }
+}
+
+@media all and (min-width: 500px) and (max-width: 750px) {
+  .grid {
+    -ms-grid-columns: 1fr 20px 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media all and (max-width: 750px) {
+  .grid {
+    grid-gap: 10px; /*the spacing between the grid items has also been reduced to 10px*/
+  }
+  .grid__item:last-child {
+      grid-column: auto / auto;
+      grid-row: auto / auto;
+   }
+    h1 {
+      font-size: 22px;
+    }
+}
+
+/*-----End of Media Queries-----*/
+
+/*-----Beginning of Animations-----*/
+
+@-webkit-keyframes color-change {
+  0% {
+    fill: #fff9f9;
+  }
+  50% {
+    fill: #FFDE66;
+  }
+  75% {
+    fill:#f4ac45;
+  }
+  100% {
+    fill: #25200F; 
+  }
+}
+
+@keyframes color-change {
+  0% {
+    fill: #fff9f9;
+  }
+  50% {
+    fill: #FFDE66;
+  }
+  75% {
+    fill:#f4ac45;
+  }
+  100% {
+    fill: #25200F; 
+  }
+}
+
+#windows > path { /*all the path elements inside of g should have the animation and for that, use the > selector*/
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s; /*specifies the number of seconds (s) or milliseconds (ms) an animation takes to complete once*/
+    -webkit-animation-name: color-change;
+            animation-name: color-change; /*specifies the name of the @keyframes animation (in this case, we’ve chosen color-change)*/
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite; /*make the animation continue forever*/
+    -webkit-animation-direction: alternate;
+            animation-direction: alternate; /*The animation reverses direction each cycle, with the first iteration being played forwards. The count to determine if a cycle is even or odd starts at one.*/
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear; /*Specifies an animation with the same speed from start to end*/
+}
+
+@-webkit-keyframes left-leg-move-reverse {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(1deg);
+            transform: rotate(1deg);
+  }
+}
+
+@keyframes left-leg-move-reverse {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(1deg);
+            transform: rotate(1deg);
+  }
+}
+
+#left-leg {
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+    -webkit-animation-name: left-leg-move-reverse;
+            animation-name: left-leg-move-reverse;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+}
+
+@-webkit-keyframes right-leg-move {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(2.3deg);
+            transform: rotate(2.3deg);
+  }
+}
+
+@keyframes right-leg-move {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(2.3deg);
+            transform: rotate(2.3deg);
+  }
+}
+
+#right-leg {
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s;
+    -webkit-animation-name: right-leg-move;
+            animation-name: right-leg-move;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+            animation-direction: alternate;
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+}
+
+@-webkit-keyframes leaves {
+  10%, 90% {
+    -webkit-transform: translate3d(-1px, 0, 0);
+            transform: translate3d(-1px, 0, 0);
+  }
+  
+  20%, 80% {
+    -webkit-transform: translate3d(2px, 0, 0);
+            transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    -webkit-transform: translate3d(-4px, 0, 0);
+            transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    -webkit-transform: translate3d(4px, 0, 0);
+            transform: translate3d(4px, 0, 0);
+  }
+}
+
+@keyframes leaves {
+  10%, 90% {
+    -webkit-transform: translate3d(-1px, 0, 0);
+            transform: translate3d(-1px, 0, 0);
+  }
+  
+  20%, 80% {
+    -webkit-transform: translate3d(2px, 0, 0);
+            transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    -webkit-transform: translate3d(-4px, 0, 0);
+            transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    -webkit-transform: translate3d(4px, 0, 0);
+            transform: translate3d(4px, 0, 0);
+  }
+}
+
+#leaves > path {
+  -webkit-animation-duration: 13s;
+          animation-duration: 13s;
+  -webkit-animation-name: leaves;
+          animation-name: leaves;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+
+.svg {
+  text-align: center;
+  padding: 20px;
+}
+
+/*-----End of Animations-----*/
