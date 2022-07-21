@@ -121,7 +121,7 @@ button:hover, button:focus, .button:hover, .button:focus  {
 }
 
 .navigation-list__item--active {
-  	text-decoration: none;
+  	text-decoration: none; /*-----removes the underlining on the active element-----*/
 }
 
 /*-----End of Navigation Items Stylings-----*/
