@@ -181,6 +181,11 @@ button:hover, button:focus, .button:hover, .button:focus  {
 
 /*-----End of Header Items-----*/
 
+.contact-page {
+  text-align: center;
+  justify-content: center;
+}
+
 /*-----Footer Items-----*/
 
 .page_footer {
@@ -303,7 +308,7 @@ button:hover, button:focus, .button:hover, .button:focus  {
     fill:#f4ac45;
   }
   100% {
-    fill: #25200F; 
+    fill: #25200F;
   }
 }
 
@@ -318,7 +323,7 @@ button:hover, button:focus, .button:hover, .button:focus  {
     fill:#f4ac45;
   }
   100% {
-    fill: #25200F; 
+    fill: #25200F;
   }
 }
 
@@ -409,7 +414,7 @@ button:hover, button:focus, .button:hover, .button:focus  {
     -webkit-transform: translate3d(-1px, 0, 0);
             transform: translate3d(-1px, 0, 0);
   }
-  
+
   20%, 80% {
     -webkit-transform: translate3d(2px, 0, 0);
             transform: translate3d(2px, 0, 0);
@@ -431,7 +436,7 @@ button:hover, button:focus, .button:hover, .button:focus  {
     -webkit-transform: translate3d(-1px, 0, 0);
             transform: translate3d(-1px, 0, 0);
   }
-  
+
   20%, 80% {
     -webkit-transform: translate3d(2px, 0, 0);
             transform: translate3d(2px, 0, 0);
