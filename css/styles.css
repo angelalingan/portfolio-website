@@ -112,6 +112,10 @@ button:focus,
   color: #2b2b2b;
 }
 
+.link-buttons {
+  text-align: center;
+}
+
 /* -----End of Button Stylings----- */
 
 /* -----Navigation Items Stylings----- */
@@ -171,6 +175,21 @@ button:focus,
 }
 
 /* -----End of Contact Page----- */
+
+/* -----Start of Table Styling----- */
+
+.about-grid_item {
+  padding: 20px;
+}
+
+.table {
+  margin: auto;
+  margin-bottom: 25px;
+  border: 1px solid #d3d3d3;
+  padding: 10px;
+}
+
+/* -----End of Table Styling----- */
 
 /* -----Footer Items----- */
 
