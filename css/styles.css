@@ -84,6 +84,7 @@ a:active { /* selected link */
 
 .button,
 button { /*  overwrites browser defaults and resets the border  */
+  width: 200px;
   border: none; /* takes the font from the outer container */
   display: inline-block;
   font-family: inherit;
@@ -106,6 +107,7 @@ button:focus,
 }
 
 .button__secondary {
+  width: 200px;
   background-color: var(--secondary-color);
   color: #2b2b2b;
 }
