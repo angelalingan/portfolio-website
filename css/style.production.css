@@ -115,6 +115,10 @@ button:focus,
   color: #2b2b2b;
 }
 
+.link-buttons {
+  text-align: center;
+}
+
 /* -----End of Button Stylings----- */
 
 /* -----Navigation Items Stylings----- */
@@ -138,7 +142,7 @@ button:focus,
 
 .profile_portrait {
   float: left; /* used to control the flow of elements, all other content will flow around that element */
-  width: 250px;
+  width: 300px;
   height: auto; /* height is automatically set to a value that matches the correct ratio */
   margin-right: 40px;
   border-radius: 50%; /* rounds each edge to 50% of the element’s original width or height */
@@ -174,6 +178,18 @@ button:focus,
 }
 
 /* -----End of Contact Page----- */
+
+.about-grid_item {
+  padding: 20px;
+}
+
+.table {
+  margin: auto;
+  margin-bottom: 25px;
+  border: 1px solid #d3d3d3;
+  padding: 10px;
+}
+
 
 /* -----Footer Items----- */
 
