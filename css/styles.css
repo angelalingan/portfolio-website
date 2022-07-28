@@ -160,7 +160,7 @@ button:focus,
   padding: 20px;
 }
 
-.page-header .page-header__item: last-child {
+.page-header .page-header__item:last-child {
   flex-grow: 1;
   text-align: right; /* right aligns the navigation */
 }
@@ -195,7 +195,7 @@ button:focus,
 
 .page_footer {
   clear: both;
-  flex-direction: column; /* puts  the group of icons below the text */
+  flex-direction: column; /* puts  the group of icons below the text, flow of the flex items inside it would change to top-to-bottom (as opposed to the default left-to-right) */
   text-align: center; /* centers the content inside the footer */
 }
 
