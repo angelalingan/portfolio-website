@@ -149,6 +149,19 @@ button:focus,
   max-width: 700px; /* will keep this “box” from exceeding 700px */
   margin: 0 auto; /* profile “box” is now centered on the page */
   margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.description {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.code {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 40px;
+  margin-left: 65px;
 }
 
 /* -----End of Profile Items----- */
