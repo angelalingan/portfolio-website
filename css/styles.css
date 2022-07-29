@@ -237,6 +237,7 @@ button:focus,
   width: auto; /* to ensure that the power of the new layout grid can still be used in modern browsers, automatically takes the width from the defined grid container */
   min-height: auto;
   margin: 0;
+  padding: 20px;
 }
 
 .grid__item: last-child { /* targets the last grid__item with the pseudo-selector last-child */
