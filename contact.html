@@ -37,7 +37,7 @@
 			</nav>
 		</header>
 
-			<div class="contact-page">
+			<div class="contact-page1">
 				<h1>Contact Me</h1>
 					<div>
 						CareerFoundry GmbH <br>
@@ -49,20 +49,21 @@
     					Skype: <a href="hello.careerfoundry">hello.careerfoundry</a><br>
     					Email:<a href="office@careerfoundry.com">office@careerfoundry.com</a>
     					<br>
-    					<a href="mailto:office@careerfoundry.com">Contact me</a>
+    					<form action="mailto:office@careerfoundry.com" target="_blank">
+							<button class="contact-me-button">Contact me</button>
+						</form>
 					</div>
 			</div>
 
-			<div class="contact-page">
-				<form action="#" method="post" id="contact-form">
+			<div class="contact-page2">
+				<h4>You can also use this form to get in touch!</h4>
+				<form action="#" method="post" class="contact-form">
 					<label class="standard-label" for="contact-email">Email:</label>
-					<input type="email" id="contact-email" required>
-
+						<input type="email" id="contact-email" required>
 					<label class="standard-label" for="telephone">Telephone:</label>
-					<input type="tel" pattern="\d{3}[\-]\d{3}[\-]\d{4}" id="telephone">
-
+						<input type="tel" pattern="\d{3}[\-]\d{3}[\-]\d{4}" id="telephone">
 					<label class="standard-label" for="message">Message:</label>
-					<textarea maxlength="240" required id="message">Max length 240 characters</textarea>
+						<textarea maxlength="240" required id="message">Max length 240 characters</textarea>
 					<input type="Submit" value="Send Message" id="messages">
 				</form>
 			</div>
