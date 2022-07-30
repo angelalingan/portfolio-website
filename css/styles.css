@@ -278,6 +278,19 @@ button:focus,
   grid-row: 1/3; /* tells the last child item that it should start and end in the first row and third */
 }
 
+.project-image {
+  justify-self:center;
+  padding: 4%;
+  border-radius: 5px;
+  box-shadow:0 4px 6px 0  rgba (34, 60,80,0.16);
+  transition: all ease-in-out .2s;
+}
+
+.project-image:hover {
+  filter: brightness(.75s);
+  box-shadow: 0 9px 12px 0 rgba(34,60,80,0.16)
+}
+
 /* -----End of Grid Items----- */
 
 /* -----Media Queries----- */
