@@ -270,6 +270,8 @@ button:focus,
       -ms-flex-direction: column;
           flex-direction: column; /* puts  the group of icons below the text */
   text-align: center; /* centers the content inside the footer */
+  margin-bottom: 40px;
+  margin-top: 40px;
 }
 
 /* -----End of Footer Items----- */

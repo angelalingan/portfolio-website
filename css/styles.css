@@ -242,6 +242,8 @@ button:focus,
   clear: both;
   flex-direction: column; /* puts  the group of icons below the text, flow of the flex items inside it would change to top-to-bottom (as opposed to the default left-to-right) */
   text-align: center; /* centers the content inside the footer */
+  margin-bottom: 40px;
+  margin-top: 40px;
 }
 
 /* -----End of Footer Items----- */
